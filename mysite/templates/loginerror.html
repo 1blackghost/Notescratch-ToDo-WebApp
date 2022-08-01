@@ -1,0 +1,176 @@
+<head>
+    Login|Notescratch
+    <style>
+    /* unvisited link */
+    a{
+         background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        font-size: 25px;
+    }
+a:link {
+  color: red;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  text-decoration: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+  text-decoration: underline;
+}
+    
+    .a1{
+        top: 80%;
+        left: 33%;
+    }
+    .a2{
+        top: 80%;
+        left: 50%;
+    }
+    .a3{
+        top: 80%;
+        left: 65%;
+    }
+    .a4{
+        top: 60%;
+        left: 35%;
+    }
+    .button {
+         background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        background-color: red;
+        border: none;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        font-family: cursive;
+        font-size: 35px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        top: 65%;
+        left: 50%;
+
+      }
+      @keyframes glowing {
+        0% {
+          background-color: red;
+          box-shadow: 0 0 20px gold;
+        }
+        50% {
+          background-color: red;
+          box-shadow: 0 0 35px gold;
+        }
+        100% {
+          background-color: red;
+          box-shadow: 0 0 5px gold;
+        }
+      }
+      .button {
+        animation: glowing 1300ms infinite;
+      }
+    p{
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        font-size: 20px;
+        top: 29%;
+        left: 40%;
+    }
+    body {
+        background: url(static/login.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+    }
+    #input2{
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+
+        }
+    #i{
+            border-width: 3px;
+            border-color: black;
+        }
+    #i1{
+            border-width: 3px;
+            border-color: black;
+        }
+
+    .l1{
+            font-size:40px ;
+            font-family:'Marck Script',cursive; ;
+            color:#915F21FF ;
+
+
+    }
+    .l2{
+
+            font-size:50px ;
+            font-family:'Marck Script',cursive; ;
+            color:#915F21FF ;
+
+        
+    }
+    #input0{
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        }
+        
+    </style>
+</head>
+<p style="color:red">Your Entries Doesnt Match.Try Again!</p>
+<form action="#" method="POST">
+<div id="input0"><label class="l1"> Name/Email:</label>
+    <input id='i1' type="text" name="name">
+</div>
+<div id="input2"><label class="l2"> Password:</label>
+    <input id='i' type="password" name="password">
+</div>
+<button  type="submit" class="button">Login</button>
+</form>
+<a class="a4" href="/forget_password">Forgot Password?<a>
+
+<a class="a1" href="/signup">Signup</a>
+<a class="a2" href="https://www.termsfeed.com/live/fc78c91c-0da9-4c29-a8e4-442a6d8efd41">Terms</a>
+<a class="a3" href="/">Home</a>
+
+<body background="{{url_for('static',filename='login.png')}}">
+</body>
+ 

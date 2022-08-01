@@ -1,0 +1,262 @@
+<title>
+   Dashboard|Notescratch
+</title>
+<head>
+
+    <style>
+       a{
+         background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        font-size: 25px;
+    }
+a:link {
+  color: red;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  text-decoration: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+  text-decoration: underline;
+}
+
+    #help{
+        position: absolute;
+        top: 170%;
+        left :30%;
+    }
+    #about{
+        position: absolute;
+        top: 170%;
+        left: 70%;
+    }
+    #share{
+        position: absolute;
+        top:170%;
+        left: 50%;
+    }
+    .btn6{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 55%;
+        left: 70%;
+
+    }
+    .btn5{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 55%;
+        left: 45%;
+
+    }
+    .btn4{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+    }
+    .btn3{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 45%;
+        left: 70%;
+    }
+    .btn1{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 45%;
+        left: 20%;
+    }
+    .btn2{
+
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+
+    }
+    #log {
+         background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        background-color: red;
+        border: none;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        font-family: cursive;
+        font-size: 35px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        top: 20%;
+        left: 70%;
+
+      }
+    input{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        border-radius: 25px;
+        font-family: cursive;
+        font-size: 40px;
+        background-color: transparent;
+        color: white;
+        border-color: orange;
+    }
+    input:hover{
+        background-color: orange;
+        border-color: orange;
+        color: black;
+    }
+    #username{
+        font-family: cursive ;
+        text-decoration: ;
+        font-size: 50px;
+        position: absolute;
+        top: 37%;
+        left: 40%;
+
+    }
+    .textarea{
+        font-family: {{family}};
+
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        width: 50%;
+
+          height: 800px;
+
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          background-color: #f8f8f8;
+          position: absolute;
+          top: 70%;
+          left: 27%;
+          -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+
+
+    }
+    #textf{
+            background-color:{{background}};
+
+    }
+
+    .textarea{
+            color:{{color}};
+
+    }
+    .textarea{
+            font-size:{{fontsize}}px;
+
+    }
+    .dashb{
+        position: absolute;
+        top: 25%;
+        left: 38%;
+    }
+    .place{
+        position: absolute;
+        top: 18%;
+        left: 20%;
+
+    }
+    .logo{
+        background:center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+
+    }
+    body{
+
+        background: url(static/final.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+
+<body background="{{url_for('static',filename='newdash.png')}}">
+<img class="logo" src="/static/logonew.png">
+<img class="place" src="/static/dashplace.png">
+<img class="dashb" src="/static/dashboard.png">
+<label id="username" style="color:white;">{{username}}</label>
+<form href="#" method="POST">
+<input name="log" id="log" type="submit" value="Logout">
+
+<textarea id="textf" name="t"  class="textarea">
+    {{r}}
+</textarea>
+<input style="display: inline-block;" name="n" class="btn1"  type="submit" value="New Note">
+<input style="display: inline-block;" name="w" class="btn2"  type="submit" value="View All Notes!">
+<input  name="d" class="btn5"  type="submit" value="Delete Note!">
+  <input name="p" class="btn4"  type="submit" value="Download!">
+
+  <input name="s" class="btn3"  type="submit" value="Save">
+<input name="cus" class="btn6"  type="submit" value="Customize">
+<a id='about' href="/about">About</a>
+<a id='help' href="/help">Help</a>
+<a id='share' href="https://api.whatsapp.com/send?text=https://notescratch.pythonanywhere.com" data-action="share/whatsapp/share">Share</a>
+ <script type="text/javascript" data-adel="atag" src="//acdcdn.com/script/atg.js" czid="v4woxous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7068226328001130"
+     crossorigin="anonymous"></script>
+</form>
+</body>
